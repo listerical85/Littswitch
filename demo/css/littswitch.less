@@ -1,0 +1,40 @@
+@littswitch-active:#4cd864;
+@littswitch-inactive:#fefefe;
+@littswitch-border:#e4e4e4;
+@littswitch-switch:#ffffff;
+@littswitch-width:44px;
+@littswitch-height:22px;
+
+.littswitch{
+  width: @littswitch-width;
+  height: @littswitch-height;
+  border-radius: @littswitch-height/2;
+  position: relative;
+  float: left;
+}
+.littswitch{
+  cursor:pointer;
+}
+.littswitch.littswitch-on{
+  background-color: @littswitch-active;
+  border:1px solid @littswitch-active;
+}
+.littswitch.littswitch-off{
+  background-color: @littswitch-inactive;
+  border:1px solid @littswitch-border;
+}
+.littswitch-switch{
+  width: @littswitch-height - 2;
+  height: @littswitch-height - 2;
+  position: absolute;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  border-radius: (@littswitch-height - 2)/2;
+  background-color: @littswitch-switch;
+  top:1px;
+}
+.littswitch-off .littswitch-switch{
+  left:1px;
+}
+.littswitch-on .littswitch-switch{
+  right:1px;
+}

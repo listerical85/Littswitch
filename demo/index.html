@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Littswitch | jQuery plugin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Littswitch">
+    <meta name="description" content="Littswitch, An easy to use jquery plugin for making iOS 7 like toggles.">
+    <meta name="keywords" content="Littswitch, iOS, iOS 7, toggle, checkbox, jquery, plugin">
+    <link rel="stylesheet" href="css/littswitch.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/littswitch.js"></script>
+<div class="container">
+    <h1>Littswitch</h1>
+    <p class="intro">Littswitch, An easy to use jQuery plugin for making iOS 7 like toggles. It requires jQueryUI and is very easy to setup, just add the js/less|css files, add 3 custom data attributes and you're ready to go.</p>
+    <hr/>
+    <h2>Example</h2>
+    <section>
+        <article>
+            <label>Click on the toggle</label><input type="checkbox" data-littswitch="true" data-littswitch-on="On" data-littswitch-off="Off"/>
+        </article>
+    </section>
+    <hr/>
+    <section>
+        <h2>Download</h2>
+        <p>You can download the sourcecode, including this example @ <a href="https://github.com/listerical85/Littswitch">Github</a></p>
+    </section>
+    <hr/>
+    <section>
+        <h2>Getting started</h2>
+        <ol>
+            <li>Download the latest version of Littswitch.</li>
+            <li>Make sure you have jQuery and jQueryUI loaded in your site. (If not, they are included on Github).
+                <code>
+                    &lt;script src="js/jquery-1.10.2.min.js"&gt;&lt;/script&gt;<br/>
+                    &lt;script src="js/jqueryui.js"&gt;&lt;/script&gt;
+                </code>
+            </li>
+            <li>Find <span>littswitch.js</span> in the js folder and include it in your site, after you have loaded jQuery
+                <code>
+                    &lt;script src="js/littswitch.js"&gt;&lt;/script&gt;
+                </code></li>
+            <li>In the css folder you will find <span>littswitch.css</span> include it in your site.
+                <code>&lt;link rel="stylesheet" href="css/littswitch.css"&gt;</code></li>
+            <li>Now you're ready to use Littswitch, add these 3 data attributes to your checkbox, <span>data-littswitch, data-littswitch-on and data-littswitch-off. See the example below.</span></li>
+            <code>
+                &lt;input type="checkbox" data-littswitch="true" data-littswitch-on="On" data-littswitch-off="Off"/&gt;
+            </code>
+            <li>The data-littswitch makes sure littswitch will replace this checkbox, data-littswitch-on and data-littswitch-off, contain the values for the on and off states.</li>
+            <li>Enjoy Littswitch!</li>
+        </ol>
+
+    </section>
+    <hr/>
+    <section>
+        <h2>Help</h2>
+        <p>Littswitch is still in development, so bugs might occure, if you find any bugs or have any requests or suggestions<br/>please create an <a href="https://github.com/listerical85/Littswitch/issues">issue on Github</a><br/>
+            You can also contact me @ <a href="mailto:info@listerical.nl">info@listerical.nl</a>
+        </p>
+    </section>
+</div>
+</body>
+</html>

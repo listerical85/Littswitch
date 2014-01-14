@@ -1,0 +1,33 @@
+.littswitch {
+  width: 44px;
+  height: 22px;
+  border-radius: 11px;
+  position: relative;
+  float: left;
+}
+.littswitch {
+  cursor: pointer;
+}
+.littswitch.littswitch-on {
+  background-color: #4cd864;
+  border: 1px solid #4cd864;
+}
+.littswitch.littswitch-off {
+  background-color: #fefefe;
+  border: 1px solid #e4e4e4;
+}
+.littswitch-switch {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: #ffffff;
+  top: 1px;
+}
+.littswitch-off .littswitch-switch {
+  left: 1px;
+}
+.littswitch-on .littswitch-switch {
+  right: 1px;
+}
